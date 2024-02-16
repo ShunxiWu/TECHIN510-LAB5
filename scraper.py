@@ -156,6 +156,7 @@ def insert_to_pg():
 
 
 if __name__ == '__main__':
-    list_links()
-    get_detail_page()
+    # list_links()
+    # get_detail_page()
     insert_to_pg()
+
