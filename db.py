@@ -13,6 +13,13 @@ db_port = os.getenv('DB_PORT')
 db_name = os.getenv('DB_NAME')
 conn_str = f'postgresql://{db_user}:{db_pw}@{db_host}:{db_port}/{db_name}'
 
+print("DB_USER:", db_user)
+print("DB_PASSWORD:", db_pw)
+print("DB_HOST:", db_host)
+print("DB_PORT:", db_port)
+print("DB_NAME:", db_name)
+
+
 def get_db_conn():
     conn = psycopg2.connect(conn_str)
     conn.autocommit = True
